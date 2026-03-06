@@ -457,3 +457,65 @@ body {
 .footer-img:hover {
     transform: scale(1.05);
 }
+.gift-section{
+text-align:center;
+margin:40px 0;
+}
+
+.gift-title{
+font-family:'Playfair Display',serif;
+font-size:1.8rem;
+margin-bottom:25px;
+color:#9e3d54;
+}
+
+.gift-container{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px;
+max-width:800px;
+margin:auto;
+}
+
+.gift-item{
+position:relative;
+}
+
+.gift-item input{
+display:none;
+}
+
+.gift-box{
+font-size:55px;
+display:block;
+cursor:pointer;
+background:#ffd6de;
+padding:20px;
+border-radius:20px;
+transition:0.3s;
+box-shadow:0 6px 15px rgba(0,0,0,0.15);
+}
+
+.gift-box:hover{
+transform:scale(1.15) rotate(-5deg);
+background:#ffc2cd;
+}
+
+.gift-quote{
+opacity:0;
+max-height:0;
+overflow:hidden;
+transition:0.4s;
+margin-top:10px;
+background:#fff0f3;
+padding:0 10px;
+border-radius:15px;
+font-style:italic;
+color:#7a3b48;
+}
+
+.gift-item input:checked ~ .gift-quote{
+opacity:1;
+max-height:200px;
+padding:15px;
+}   
